@@ -1,0 +1,9 @@
+C:\challengeHolanda\ChallengeManager\bin\Debug\ChallengeManager.dll
+C:\challengeHolanda\ChallengeManager\bin\Debug\ChallengeManager.pdb
+C:\challengeHolanda\ChallengeManager\bin\Debug\Challenge.Domain.dll
+C:\challengeHolanda\ChallengeManager\bin\Debug\Challenge.Domain.pdb
+C:\challengeHolanda\ChallengeManager\obj\Debug\Challenge.Managers.csprojAssemblyReference.cache
+C:\challengeHolanda\ChallengeManager\obj\Debug\Challenge.Managers.csproj.CoreCompileInputs.cache
+C:\challengeHolanda\ChallengeManager\obj\Debug\Challenge.Managers.csproj.CopyComplete
+C:\challengeHolanda\ChallengeManager\obj\Debug\ChallengeManager.dll
+C:\challengeHolanda\ChallengeManager\obj\Debug\ChallengeManager.pdb

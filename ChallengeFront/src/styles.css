@@ -1,0 +1,135 @@
+/* You can add global styles to this file, and also import other style files */
+button.btn-submit{
+    background-color: #38547b;
+    color: #fff;
+    width: 100%;
+}
+button.btn-submit:focus,button.btn-submit:hover{
+    background-color: #38547b;
+}
+
+input.ng-invalid.ng-dirty{
+    border-bottom-color : grey !important;
+    box-shadow: 0 1px 0 0 grey !important;
+}
+/*for error div i*/
+div.error-message i{
+    vertical-align: middle !important;
+}
+
+/*for tab control*/
+.tabs{
+    height: 65px;
+}
+.tabs .tab{
+    text-transform : none !important;
+    line-height: 65px;
+    height: 65px;
+}
+.tabs .tab a{
+    font-size: 25px;
+    color: grey !important;
+}
+
+.tabs .tab a.active{
+    background-color: #fff !important;
+}
+.mark
+{
+    /* El color del fondo anula el color de la página completa */
+    background-color: red;
+    color: black;
+}
+.deep-purple.lighten-5 {
+    background-color: aliceblue !important;
+}
+#Contenedor{
+	width: 400px;
+	margin: 50px auto;
+	background-color: #F3EDED;
+        border: 1px solid #ECE8E8;
+	height: 400px;
+	border-radius:8px;
+	padding: 0px 9px 0px 9px;
+}
+
+button:focus {
+    border: 1px solid #b2babf;
+    background: #f30627;
+    outline: 0 none;
+    color: #ffffff;
+}
+
+.form-control {
+  font-size: 14px;
+  border-radius: 2px;
+  border: 1px solid #f30627;
+}
+
+* {
+  font-size: 12px;
+  font-family: 'Times New Roman';
+}
+ 
+td,
+th,
+tr,
+table {
+  border-top: 1px solid black;
+  border-collapse: collapse;
+}
+ 
+td.producto,
+th.producto {
+  width: 75px;
+  max-width: 75px;
+}
+ 
+td.cantidad,
+th.cantidad {
+  width: 40px;
+  max-width: 40px;
+  word-break: break-all;
+}
+ 
+td.precio,
+th.precio {
+  width: 40px;
+  max-width: 40px;
+  word-break: break-all;
+}
+ 
+.centrado {
+  text-align: center;
+  align-content: center;
+}
+ 
+.ticket {
+  width: 155px;
+  max-width: 155px;
+}
+ 
+img {
+  max-width: inherit;
+  width: inherit;
+}
+
+ .oculto-impresion, .oculto-impresion *{
+    display: none !important;
+  }
+
+ .cred-vencido {
+            background-color: #FF3933 !important;
+            color: #ffffff !important;
+        }
+
+        .cred-ok {
+            background-color: #77FF33 !important;
+            color: #ffffff !important;
+        }
+        .cred-cancel {
+            background-color: #339CFF !important;
+            color: #ffffff !important;
+        }
+    
+

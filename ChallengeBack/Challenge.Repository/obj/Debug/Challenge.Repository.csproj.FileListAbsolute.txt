@@ -1,0 +1,17 @@
+C:\challengeHolanda\Challenge.Repository\bin\Debug\Challenge.Repository.dll.config
+C:\challengeHolanda\Challenge.Repository\bin\Debug\Challenge.Repository.dll
+C:\challengeHolanda\Challenge.Repository\bin\Debug\Challenge.Repository.pdb
+C:\challengeHolanda\Challenge.Repository\bin\Debug\Challenge.Domain.dll
+C:\challengeHolanda\Challenge.Repository\bin\Debug\EntityFramework.dll
+C:\challengeHolanda\Challenge.Repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\challengeHolanda\Challenge.Repository\bin\Debug\Challenge.Domain.pdb
+C:\challengeHolanda\Challenge.Repository\bin\Debug\EntityFramework.xml
+C:\challengeHolanda\Challenge.Repository\bin\Debug\EntityFramework.SqlServer.xml
+C:\challengeHolanda\Challenge.Repository\obj\Debug\Challenge.Repository.csprojAssemblyReference.cache
+C:\challengeHolanda\Challenge.Repository\obj\Debug\Challenge.Repository.csproj.CoreCompileInputs.cache
+C:\challengeHolanda\Challenge.Repository\obj\Debug\Challenge.Repository.csproj.CopyComplete
+C:\challengeHolanda\Challenge.Repository\obj\Debug\Challenge.Repository.dll
+C:\challengeHolanda\Challenge.Repository\obj\Debug\Challenge.Repository.pdb
+C:\challengeHolanda\Challenge.Repository\bin\Debug\EntityFramework.SqlServerCompact.dll
+C:\challengeHolanda\Challenge.Repository\bin\Debug\System.Data.SqlServerCe.dll
+C:\challengeHolanda\Challenge.Repository\bin\Debug\EntityFramework.SqlServerCompact.xml

@@ -1,0 +1,5 @@
+C:\challengeHolanda\Challenge.Domain\bin\Debug\Challenge.Domain.dll
+C:\challengeHolanda\Challenge.Domain\bin\Debug\Challenge.Domain.pdb
+C:\challengeHolanda\Challenge.Domain\obj\Debug\Challenge.Domain.csproj.CoreCompileInputs.cache
+C:\challengeHolanda\Challenge.Domain\obj\Debug\Challenge.Domain.dll
+C:\challengeHolanda\Challenge.Domain\obj\Debug\Challenge.Domain.pdb
