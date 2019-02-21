@@ -41,6 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IUserManager.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Results\DataExecutionResult.cs" />
+    <Compile Include="Results\ExecutionResult.cs" />
+    <Compile Include="Helpers\ResourceHelper.cs" />
     <Compile Include="UserManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -49,6 +58,16 @@
       <Project>{9d933bfb-abc1-4387-a76e-04b1f0c06c09}</Project>
       <Name>Challenge.Domain</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Challenge.Repository\Challenge.Repository.csproj">
+      <Project>{59657295-d4c3-4f12-81c2-294149b63548}</Project>
+      <Name>Challenge.Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

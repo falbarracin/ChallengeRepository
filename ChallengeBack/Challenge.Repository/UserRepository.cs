@@ -1,59 +1,73 @@
 ﻿using Challenge.Domain;
-using Challenge.Repository.Context;
-using System;
 using System.Collections.Generic;
-using System.Net;
-using System.Net.Http;
-using System.Net.Http.Headers;
+using System.Linq;
+using System;
 
 namespace Challenge.Repository
 {
-    public class UserRepository
+    public class UserRepository : Base.RepositoryBase<User>, IUserRepository
     {
-        DBChallengeContext Context;
-        public UserRepository() //DBChallengeContext context
-        {            
-            //Context = context;
+        public UserRepository(Contexts.IDBChallengeContext context) : base(context)
+        {
         }
 
-        public static List<User> Entities { get; set; }
-
         /// <summary>
-        /// method for get users
+        /// method for 
         /// </summary>
+        /// <param name="NumPage"></param>
+        /// <param name="NumRegisters"></param>
         /// <returns></returns>
-        public List<User> GetAll()
+        public List<User> GetByFilter(int NumPage, int NumRegisters)
         {
-            if (Entities == null)
-            {                
-                Entities = GetEntitiesFromApi();
-            }
-            return Entities;
-        }
-
-
-        /// <summary>
-        /// method for call api user
-        /// </summary>
-        /// <returns></returns>
-        static List<User> GetEntitiesFromApi()
-        {
-            List<User> users = new List<User>();           
-
-            using (var client = new HttpClient())
+            try
             {
-                client.BaseAddress = new Uri("https:/randomuser.me/");
-                client.DefaultRequestHeaders.Accept.Clear();
-                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                //GET Method                 
-                HttpResponseMessage response =  client.GetAsync("api/?results=500").Result;
-                if (response.StatusCode == HttpStatusCode.OK || response.StatusCode == HttpStatusCode.Created || response.StatusCode == HttpStatusCode.Accepted || response.StatusCode == HttpStatusCode.NoContent)
-                {
-                    users = response.Content.ReadAsAsync<List<User>>().Result;                    
-                }
+                List<User> result = new List<User>();
+                result = Context.Users.ToList().Skip(NumPage * NumRegisters).Take(NumRegisters).ToList();
+                return result;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error Generico.");
             }
 
-            return users;
+        }
+
+        /// <summary>
+        /// method for get by idvalue
+        /// </summary>
+        /// <param name="IdValue"></param>
+        /// <returns></returns>
+        public User GetById(string IdValue)
+        {
+            try
+            {
+                User result = new User();
+                result = Context.Users.Find(IdValue);
+                return result;
+            }
+            catch (Exception ex)
+            {                
+                throw new Exception("Error Generico.");
+            }
+        }
+
+        public bool Delete(string IdValue)
+        {
+            try
+            {
+                User result = new User();
+                result = Context.Users.Find(IdValue);
+
+                Context.Users.Remove(result);
+                Context.SaveChanges();
+
+                return true;
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            
         }
     }
 }

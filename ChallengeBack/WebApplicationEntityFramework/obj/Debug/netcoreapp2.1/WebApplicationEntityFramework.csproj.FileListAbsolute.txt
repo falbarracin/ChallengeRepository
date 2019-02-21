@@ -1,0 +1,5 @@
+C:\ChallengeRepository-master\ChallengeBack\WebApplicationEntityFramework\bin\Debug\netcoreapp2.1\WebApplicationEntityFramework.deps.json
+C:\ChallengeRepository-master\ChallengeBack\WebApplicationEntityFramework\bin\Debug\netcoreapp2.1\WebApplicationEntityFramework.runtimeconfig.json
+C:\ChallengeRepository-master\ChallengeBack\WebApplicationEntityFramework\bin\Debug\netcoreapp2.1\WebApplicationEntityFramework.runtimeconfig.dev.json
+C:\ChallengeRepository-master\ChallengeBack\WebApplicationEntityFramework\obj\Debug\netcoreapp2.1\WebApplicationEntityFramework.csprojResolveAssemblyReference.cache
+C:\ChallengeRepository-master\ChallengeBack\WebApplicationEntityFramework\obj\Debug\netcoreapp2.1\WebApplicationEntityFramework.AssemblyInfo.cs

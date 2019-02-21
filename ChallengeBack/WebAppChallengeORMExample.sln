@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.28307.329
+VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplicationNHibernate", "WebApplicationNHibernate\WebApplicationNHibernate.csproj", "{F4236531-33AA-4176-8B7E-20E1FA3D4F87}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Challenge.Domain", "Challenge.Domain\Challenge.Domain.csproj", "{9D933BFB-ABC1-4387-A76E-04B1F0C06C09}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Challenge.Repository", "Challenge.Repository\Challenge.Repository.csproj", "{59657295-D4C3-4F12-81C2-294149B63548}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiChallenge", "WebApiChallenge\WebApiChallenge.csproj", "{345FFCA8-24D6-4A2E-A57A-2A43F9AB4206}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{59657295-D4C3-4F12-81C2-294149B63548}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59657295-D4C3-4F12-81C2-294149B63548}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59657295-D4C3-4F12-81C2-294149B63548}.Release|Any CPU.Build.0 = Release|Any CPU
+		{345FFCA8-24D6-4A2E-A57A-2A43F9AB4206}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{345FFCA8-24D6-4A2E-A57A-2A43F9AB4206}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{345FFCA8-24D6-4A2E-A57A-2A43F9AB4206}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{345FFCA8-24D6-4A2E-A57A-2A43F9AB4206}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
