@@ -3,6 +3,8 @@ using System.Linq;
 using System.Web.Http;
 using ChallengeManager;
 using WebApplicationChallenge.Models;
+using Challenge.Domain;
+
 
 namespace WebApiChallenge.Controllers
 {
@@ -61,12 +63,41 @@ namespace WebApiChallenge.Controllers
             return Ok(response);
         }
 
-        [HttpDelete]        
+        [HttpDelete]
         public IHttpActionResult Delete([FromBody] string IdValue)
         {
             var response = new RespnseBase.ResponseBase<bool>();
 
             var result = _userManager.Delete(IdValue);
+
+            //Map user to response model
+            response.Data = result.Success;
+            response.Message = result.Message;
+
+            return Ok(response);
+        }
+
+        [HttpPost]
+        public IHttpActionResult Post([FromBody] UserRequest request)
+        {
+            var response = new RespnseBase.ResponseBase<bool>();
+            if (request == null)
+            {
+                return BadRequest("El usuario es nulo");
+            }
+
+            User user = new User
+            {
+                IdValue = request.IdValue,
+                BirthDate = request.BirthDate,
+                Email = request.Email,
+                FirstName = request.FirstName,
+                Gender = request.Gender,
+                LastName = request.LastName,               
+                UserName = request.UserName,
+                Uuid = request.Uuid
+            };
+            var result = _userManager.Save(user);
 
             //Map user to response model
             response.Data = result.Success;

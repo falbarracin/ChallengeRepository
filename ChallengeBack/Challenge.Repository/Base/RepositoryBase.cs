@@ -45,7 +45,7 @@ namespace Challenge.Repository.Base
             {
                 return false;
             }
-        }
+        }       
 
         /// <summary>
         /// method save list of entities

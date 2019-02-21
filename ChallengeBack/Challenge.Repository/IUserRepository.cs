@@ -11,6 +11,6 @@ namespace Challenge.Repository
     {
         User GetById(string IdValue);
         List<User> GetByFilter(int NumPage, int NumRegisters);
-        bool Delete(string IdValue);
+        bool Delete(string IdValue);       
     }
 }

@@ -51,6 +51,11 @@ namespace Challenge.Repository
             }
         }
 
+        /// <summary>
+        /// delete user
+        /// </summary>
+        /// <param name="IdValue"></param>
+        /// <returns></returns>
         public bool Delete(string IdValue)
         {
             try
